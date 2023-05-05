@@ -31,14 +31,14 @@ GUI url: http://127.0.0.1:*984/_utils (check peer's port in docker compose file)
 #### Backup and Restore
 1. ./scripts/backupAndRestore/create-backup.sh
 2. Uncomment in docker-compose-local-org1, docker-compose-local-org2, docker-compose-local-orderer yaml files like below
-> #- peer0.userlog-org2.example.com:/var/hyperledger/production
-      - ../backup/peer0.userlog-org2:/var/hyperledger/production
-> #- peer1.userlog-org1.example.com:/var/hyperledger/production
-      - ../backup/peer1.userlog-org1:/var/hyperledger/production
-> #- peer0.userlog-org1.example.com:/var/hyperledger/production
-      - ../backup/peer0.userlog-org1:/var/hyperledger/production
-> #- orderer-userlog.example.com:/var/hyperledger/production/orderer 
-      - ../backup/orderer-userlog:/var/hyperledger/production/orderer
+> #- peer0.userlog-org2.example.com:/var/hyperledger/production  
+      - ../backup/peer0.userlog-org2:/var/hyperledger/production  
+> #- peer1.userlog-org1.example.com:/var/hyperledger/production  
+      - ../backup/peer1.userlog-org1:/var/hyperledger/production  
+> #- peer0.userlog-org1.example.com:/var/hyperledger/production  
+      - ../backup/peer0.userlog-org1:/var/hyperledger/production  
+> #- orderer-userlog.example.com:/var/hyperledger/production/orderer  
+      - ../backup/orderer-userlog:/var/hyperledger/production/orderer  
 3. ./scripts/backupAndRestore/network-restart.sh
 4. Check chaincode script > ./scripts/backupAndRestore/check-chaincode.sh
 
