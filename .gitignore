@@ -1,3 +1,5 @@
+.idea
+
 /atcc/dist
 /atcc/node_modules
 mychaincode.tar.gz
