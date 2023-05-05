@@ -50,8 +50,8 @@ GUI url: http://127.0.0.1:*984/_utils (check peer's port in docker compose file)
 > There is no "Revert" concept in SmartContract. 
 
 # Backend dApp
-cd backend
-npm install
-npm run build
-npm run dev
+cd backend  
+npm install  
+npm run build  
+npm run dev  
 swagger: http://localhost:8000/api-docs
