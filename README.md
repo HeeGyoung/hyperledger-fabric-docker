@@ -1,5 +1,5 @@
 ### Required installation.
-1. curl -sSLO https://raw.githubusercontent.com/hyperledger/fabric/main/scripts/install-fabric.sh && chmod +x install-fabric.sh\n
+1. curl -sSLO https://raw.githubusercontent.com/hyperledger/fabric/main/scripts/install-fabric.sh && chmod +x install-fabric.sh
 2. ./install-fabric.sh binary | ./install-fabric.sh --fabric-version 2.2.1 docker
 3. brew install jq
 4. docker pull hyperledger/fabric-nodeenv:amd64-2.4.2
@@ -9,7 +9,7 @@
 ### Up fabric network
 7. ./scripts/network.sh
 8. ./scripts/create-channel.sh
-9. ./script/deploy-chaincode.sh
+9. ./scripts/deploy-chaincode.sh
 
 
 ### Add new Peer in an organization - using peer2 under org2 as an example here.
